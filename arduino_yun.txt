@@ -1,0 +1,13 @@
+Arduino Yun
+
+opkg update
+opkg install mg
+export TERM="vt100"
+
+using ash shell; so put the TERM setting in ~/.profile
+
+opkg update
+opkg list-installed
+opkg list yun*
+opkg list-upgradable
+opkg upgrade temboo

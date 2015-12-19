@@ -2,7 +2,8 @@ Arduino Yun
 
 opkg update
 opkg install mg
-export TERM="vt100"
+
+export TERM="xterm-color"
 
 using ash shell; so put the TERM setting in ~/.profile
 

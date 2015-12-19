@@ -3,12 +3,25 @@ Arduino Yun
 opkg update
 opkg install mg
 
-export TERM="xterm-color"
-
 using ash shell; so put the TERM setting in ~/.profile
+export TERM="xterm-color"
 
 opkg update
 opkg list-installed
 opkg list yun*
 opkg list-upgradable
 opkg upgrade temboo
+
+
+----
+
+To expand the Yun disk space onto the SD card, see
+<https://www.arduino.cc/en/Tutorial/ExpandingYunDiskSpace>.
+
+----
+
+Static web server: put stuff in
+
+    /mnt/sda1/arduino/www
+
+Viewable at karlduino2.local/sd
